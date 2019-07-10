@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: white;
 }
 
 .img {
@@ -112,8 +112,6 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -126,7 +124,6 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
 }
 
 .site-header:after {
@@ -150,12 +147,12 @@ body {
 .site-header-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10vw 4vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 4vw 0 10vw 0;
     min-height: 200px;
     max-height: 450px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .site-title {
@@ -168,6 +165,17 @@ body {
 
 .site-logo {
     max-height: 45px;
+}
+
+.site-sublogo {
+    font-weight: normal;
+    color: #cbcbcf;
+    height: 3.5rem;
+    margin-top: auto;
+    margin-left: 1rem;
+    position: relative;
+    top: .7rem;
+    color: #cbcbcf;
 }
 
 .site-description {
@@ -266,7 +274,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: rgb(112, 112, 122);
     opacity: 0.8;
 }
 
@@ -298,7 +306,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #fff;
+    color: rgb(112, 112, 122);
     opacity: 0.8;
 }
 
@@ -309,6 +317,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .social-link svg {
     height: 1.8rem;
     fill: #fff;
+}
+
+social-link-tg svg {
+  height: 2.1rem;
 }
 
 .social-link-fb svg {
@@ -330,8 +342,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: #70707a 1px solid;
+    color: #70707a;
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -354,7 +366,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: rgb(112, 112, 122);
 }
 
 @media (max-width: 700px) {
@@ -2233,7 +2245,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: #1a1a23;
 }
 
 .site-footer-content {
